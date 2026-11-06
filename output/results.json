@@ -1,0 +1,104 @@
+{
+  "dataset": "ShanghaiTech Part B",
+  "data_stats": {
+    "train": {
+      "n": 400,
+      "total": 49151,
+      "min": 12,
+      "max": 576,
+      "mean": 122.9,
+      "median": 99.0
+    },
+    "test": {
+      "n": 316,
+      "total": 39121,
+      "min": 9,
+      "max": 539,
+      "mean": 123.8,
+      "median": 93.0
+    }
+  },
+  "eda": {
+    "so_anh": 716,
+    "kich_thuoc": {
+      "768x1024": 716
+    },
+    "nn_median_px": 15.88046415850887,
+    "nn_median_top_vs_bottom": [
+      11.132574927640908,
+      162.96238532231558
+    ],
+    "ti_le_o_trong_%": 54.041666666666664,
+    "o_dong_nhat": 153,
+    "do_sang_min_max": [
+      58.643882751464844,
+      162.27226765950522
+    ],
+    "ks_pvalue_train_test": 0.24455138161776985,
+    "so_anh_theo_muc": {
+      "Xanh": {
+        "test": 266,
+        "train": 331
+      },
+      "Vàng": {
+        "test": 33,
+        "train": 46
+      },
+      "Cam": {
+        "test": 8,
+        "train": 17
+      },
+      "Đỏ": {
+        "test": 9,
+        "train": 6
+      }
+    }
+  },
+  "best_epoch": 116,
+  "val_mae": 10.77628308105469,
+  "test_mae": 9.553877901487713,
+  "test_rmse": 14.87239002722598,
+  "by_bin": [
+    {
+      "nhom": "0–50",
+      "so_anh": 60,
+      "mae": 2.466479685465495,
+      "sai_so_tuong_doi_%": 7.444912366294925
+    },
+    {
+      "nhom": "50–100",
+      "so_anh": 109,
+      "mae": 5.724936657826835,
+      "sai_so_tuong_doi_%": 7.759330587009348
+    },
+    {
+      "nhom": "100–200",
+      "so_anh": 97,
+      "mae": 11.712048415351159,
+      "sai_so_tuong_doi_%": 8.074431668769032
+    },
+    {
+      "nhom": "200–∞",
+      "so_anh": 50,
+      "mae": 22.218996875000002,
+      "sai_so_tuong_doi_%": 7.536268484714636
+    }
+  ],
+  "fps_768x1024": 17.965771560540134,
+  "gpu": "Tesla T4",
+  "cfg": {
+    "part": "B",
+    "sigma": 15,
+    "adaptive": false,
+    "crop": 512,
+    "batch_size": 4,
+    "epochs": 150,
+    "lr": 1e-05,
+    "weight_decay": 0.0001,
+    "density_scale": 100.0,
+    "val_ratio": 0.1,
+    "eval_every": 2,
+    "seed": 42
+  },
+  "alert_agreement": 95.88607594936708
+}

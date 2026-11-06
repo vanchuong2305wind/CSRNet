@@ -1,0 +1,10 @@
+torch>=2.1
+torchvision>=0.16
+opencv-python>=4.8
+numpy
+scipy
+matplotlib
+pandas
+flask>=3.0
+streamlit>=1.32  # chỉ cần cho app.py cũ
+kagglehub
